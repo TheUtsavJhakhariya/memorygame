@@ -1,0 +1,25 @@
+/* src/components/Board/Board.css */
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 100px;
+    height: 150px;
+    perspective: 1000px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+  }
+  
+  .card.flipped img {
+    transform: rotateY(180deg);
+  }
+  
